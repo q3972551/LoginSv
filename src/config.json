@@ -1,0 +1,29 @@
+{
+	"host":"192.168.3.134",
+	"port":5566,
+	"redis":{
+	       "host":"10.1.2.103",
+	       "port":6379,
+	       "passwd":"9527games"
+	},
+	"sms":{
+		"product":"Dysmsapi",
+		"domain":"dysmsapi.aliyuncs.com",
+		"access_key":"LTAIsl6eJIzT43wZ",
+		"access_secret":"1oRYzemU9DUUZPv9BCS1Xr0uNT7sPS",
+		"signName":"9527游戏",
+		"templateCode":"SMS_96680047",
+		"time":5
+	},
+	"wechat":{
+		"mch_id":"1490260242",
+		"appid":"wx15092ed90e51b60a"
+	},
+	"ios":{
+	
+	},
+	"ali":{
+		"app_id":"123",
+	},
+	"bundle_id":"com.9527.tortoise.org"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>LoginSv</display-name>
+   <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.account.LoginServlet</servlet-class>
+  </servlet>
+    <servlet>  
+    <servlet-name>WXLoginServlet</servlet-name>  
+   <servlet-class>servlet.wx.LoginServlet</servlet-class>  
+   </servlet>  
+     <servlet>  
+    <servlet-name>QQLoginServlet</servlet-name>  
+   <servlet-class>servlet.qq.LoginServlet</servlet-class>  
+   </servlet>  
+        <servlet>  
+    <servlet-name>WeiBoLoginServlet</servlet-name>  
+   <servlet-class>servlet.weibo.LoginServlet</servlet-class>  
+   </servlet>  
+      <servlet>
+    <servlet-name>TelLoginServlet</servlet-name>  
+   <servlet-class>servlet.tel.LoginServlet</servlet-class>  
+   </servlet>  
+         <servlet>
+    <servlet-name>RegServlet</servlet-name>  
+   <servlet-class>servlet.account.RegistServlet</servlet-class>  
+   </servlet>  
+            <servlet>
+    <servlet-name>FtPasswdTelServlet</servlet-name>  
+   <servlet-class>servlet.passwd.ForgotPasswdServlet_Tel</servlet-class>  
+   </servlet>  
+    <servlet>
+    <servlet-name>TelRegServlet</servlet-name>  
+   <servlet-class>servlet.tel.RegistServlet</servlet-class>  
+   </servlet>  
+      <servlet>   
+    <servlet-name>StartUpServlet</servlet-name>   
+    <servlet-class>servlet.StartUpServlet</servlet-class>   
+    <!-- 如果需要自动加载，加下面一句 -->   
+    <load-on-startup>0</load-on-startup>   
+</servlet>
+     <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login/user</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>  
+    <servlet-name>WXLoginServlet</servlet-name>  
+    <url-pattern>/login/wx</url-pattern>  
+</servlet-mapping>  
+  <servlet-mapping>  
+    <servlet-name>QQLoginServlet</servlet-name>  
+    <url-pattern>/login/qq</url-pattern>  
+</servlet-mapping>  
+  <servlet-mapping>  
+    <servlet-name>WeiBoLoginServlet</servlet-name>  
+    <url-pattern>/login/weibo</url-pattern>  
+</servlet-mapping> 
+  <servlet-mapping>  
+    <servlet-name>TelLoginServlet</servlet-name>  
+    <url-pattern>/login/tel</url-pattern>  
+</servlet-mapping> 
+  <servlet-mapping>  
+    <servlet-name>RegServlet</servlet-name>  
+    <url-pattern>/reg/user</url-pattern>  
+</servlet-mapping> 
+  <servlet-mapping>  
+    <servlet-name>FtPasswdTelServlet</servlet-name>  
+    <url-pattern>/passwd/tel</url-pattern>  
+</servlet-mapping> 
+  <servlet-mapping>  
+    <servlet-name>TelRegServlet</servlet-name>  
+    <url-pattern>/reg/tel</url-pattern>  
+</servlet-mapping> 
+</web-app>
